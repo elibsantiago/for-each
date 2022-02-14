@@ -1,0 +1,41 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">
+				Estrutura de Dados
+			</h1>
+
+			<p>Nome: {pessoa.nome}</p>
+			<p>Tel: {pessoa.tel}</p>
+			<p>Idade: {pessoa.idade}</p>
+			<p>Status: {pessoa.status}</p>
+
+			<!-- <h1 class="slds-text-heading_large">
+				Meus pokemons
+			</h1> -->
+
+			<!-- <template for:each={pokemons} for:item="poke">
+				<div key={poke.cod}>
+					<p>{poke.nome}</p>
+					<p>{poke.tipo}</p>
+				</div>
+			</template> -->
+
+			<h1 class="slds-text-heading_large">
+				Caverna do Dragão
+			</h1>
+
+			<template for:each={caverna} for:item="cav">
+				<div key={cav.cod}>
+					<p>Nome: {cav.nome}</p>
+					<p>Arma: {cav.arma}</p>
+					<p>FOR: {cav.força}</p>
+					<p>AGI: {cav.agilidade}</p>
+					<p>INT: {cav.inteligencia}</p>
+					<p>STM: {cav.estamina}</p></br>
+				</div>
+			</template>
+
+		</div>
+	</lightning-card>
+</template>
